@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "NorseBold";
+    src: url("../assets/font/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    /* standard reset */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* colors */
+    --black: #333;
+    --base-white: rgb(246, 246, 246);
+    --pure-white: #fff;
+    --input-blue: rgb(75, 75, 255);
+    --input-red: #ff6d6d;
+    --input-border: #E5E7EB;
+    --button-green: #596D48;
+    --button-green-hover: #49593b;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--base-white);
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
+.odin-logo-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: "NorseBold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20%;
+    margin-top: 20vh;
+}
+
+.odin-logo {
+    height: 100%;
+    width: auto;
+}
+
+.bg-image-credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.bg-image-credits a {
+    color: white;
+    transition: ease-in-out 0.1s;
+}
+
+.bg-image-credits a:hover {
+    color: var(--input-border);
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    padding: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 8rem;
+}
+
+.main-header {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    max-width: 60ch;
+}
+
+.final-header {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form {
+    padding: 1rem 3rem;
+    background-color: var(--pure-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.form-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-labels {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+    margin-bottom: 0.2rem;
+}
+
+.name-line,
+.contact-line,
+.password-line {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+input {
+    border: 2px solid var(--input-border);
+    border-radius: 6px;
+    padding: 0.4rem;
+    min-width: 30ch;
+    min-height: 2rem;
+    font-size: 1rem;
+    transition: ease-in-out 0.2s;
+}
+
+.input:focus {
+    border-color: var(--input-blue);
+    box-shadow: 0 0 6px var(--input-blue);
+    outline: none;
+}
+
+.input:invalid {
+    border-color: var(--input-red);
+    box-shadow: 0 0 6px var(--input-red);
+    outline: none;
+}
+
+.create-account {
+    background-color: var(--button-green);
+    color: var(--pure-white);
+    width: 30ch;
+    margin-top: 1.4rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: none;
+    transition: ease-in-out 0.1s;
+    font-weight: 700;
+}
+
+.create-account:hover {
+    background-color: #49593b;
+}
+
+.button-alternative {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-weight: 400;
+}
+
+.log-in-span {
+    cursor: pointer;
+    color: var(--button-green);
+    font-weight: 700;
+    transition: ease-in-out 0.1s;
+}
+
+.log-in-span:hover {
+    color: grey;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.6rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.github-icon {
+    margin-left: 0.8rem;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.github-icon:hover {
+    color: rgb(129, 129, 129);
+}
+
+/* media */
+@media screen and (max-width: 1024px) {
+    /* section one */    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-one {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .odin-logo {
+        height: clamp(10vh, 20vh, 30vh);
+    }
+
+    .odin-logo-block {
+        height: 40vh;
+        margin-top: 0;
+    }
+
+    .odin-logo-block h1 {
+        font-size: clamp(3rem, 7rem, 10rem);
+    }
+    /* section two */
+    .header {
+        margin-top: 2rem;
+    }
+    /*
+    .name-line,
+    .contact-line,
+    .password-line {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+*/
+    .footer-container {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .name-line,
+    .contact-line,
+    .password-line {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
