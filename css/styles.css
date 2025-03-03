@@ -118,7 +118,8 @@
 .input-labels {
     display: block;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 2px;
     color: rgb(97, 97, 97);
     margin-bottom: 0.2rem;
 }
